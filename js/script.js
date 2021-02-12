@@ -13295,7 +13295,7 @@ $(function () {
    	$partialContainer.empty().append(spinner);
 
 	   $.ajax({
-	   	url: '../' + $remote,
+	   	url: $remote,
 	   	dataType: "html"
 	   }).done(function(data){
 			$partialContainer.html(data)
