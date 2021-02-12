@@ -13299,6 +13299,7 @@ $(function () {
 	   	dataType: "html"
 	   }).done(function(data){
 			$partialContainer.html(data)
+			window.scrollTo({ top: $partialContainer.offset().top - 10, behavior: 'smooth'});
    		//var filesToUpload = [];
 			//var files1Uploader = $("#fileinputWrap").fileUploader(filesToUpload, "fileinputWrap");
    		$('.js-select2').each(function(index, item){
@@ -13307,6 +13308,8 @@ $(function () {
 			});
 		}).fail(function() { 
 			/* Do error.. */
+			var $error = $('<div class="alert alert-danger mtlg" role="alert">حدث خطأ ما، برجاء التحقق من اتصالك بالانترنت</div>')
+			$partialContainer.html($error)
 		});
 	});
 
