@@ -182,12 +182,44 @@
 		    			<div class="tktg-heading-options-dropdown">
 		    				<span>إتخاذ إجراء تحليل تكليف &nbsp; <i class="fas fa-arrow-circle-down"></i></span>
 		    				<ul id="quick_taklet_actions_ul">
-		    					<li><a href="#provideـopinion">إبداء رأي</a></li>
+		    					<li><a href="#">دراسة قابلية التنفيذ</a></li>
 		    					<li><a href="#torch_holder">تعيّين  حامل مشعل</a></li>
-		    					<li><a href="#business_owner">تعيّين  مالك عمل</a></li>
-		    					<li><a href="#puppy_study">دراسة جروي</a></li>
-		    					<li><a href="#create_project_charter">إنشاء ميثاق مشروع</a></li>
-		    					<li><a href="#activites">فاعليات</a></li>
+		    					<li><a href="#">تعيّين  ممثل مكتب تحليل الرؤية</a></li>
+		    					<li><a href="#">نتيجة تحليل التكليف</a></li>
+		    					<li class="has-submenu">
+		    						<a href="#">دراسة الجدوي</a>
+		    						<ul>
+		    							<li><a data-toggle="ajaxpartial" data-ppartial="partials/puppy_study.html" href="partials/puppy_study.html">إعداد دراسة الجدوي</a></li>
+		    							<li><a href="#puppy_study_review">مراجعة دراسة الجدوي (مالك العمل)</a></li>
+		    							<li><a href="#puppy_study_strategy_review">مراجعة دراسة الجدوي (الإدارة الإستراتيجية)</a></li>
+		    						</ul>
+		    					</li>
+		    					<li class="has-submenu">
+		    						<a href="#">ميثاق المشروع</a>
+		    						<ul>
+		    							<li><a href="#create_project_charter">طلب البدأ في إنشاء مثياق مشروع</a></li>
+		    							<li><a href="#">إعداد وثيقة مثياق مشروع</a></li>
+		    							<li><a href="#">تعيّين مدير مشروع</a></li>
+		    							<li><a href="#">تطوير وثيقة مثياق مشروع</a></li>
+		    							<li><a href="#">رفع ميثاق المشروع للموافقة</a></li>
+		    							<li><a href="#">مراجعة مثياق مشروع</a></li>
+		    							<li><a href="#">رفع النسخة المعتمدة للنظام</a></li>
+		    							<li><a href="#">التكامل مع نظم إدارة المشاريع</a></li>
+		    						</ul>
+		    					</li>
+		    					<li class="has-submenu">
+		    						<a href="#">إغلاق تكليف خارجي</a>
+		    						<ul>
+		    							<li><a href="#">إرفاق الخطاب الموقع الذي تم تصديره</a></li>
+		    							<li><a href="#">الإطلاع علي الخطاب وتحديث الحالة</a></li>
+		    							<li><a href="#">تعيّين مدير المشروع</a></li>
+		    							<li><a href="#">تطوير وثيقة مثياق مشروع</a></li>
+		    							<li><a href="#">التحقق  من إكتمال المرفقات</a></li>
+		    							<li><a href="#">عمل مسودة  الخطاب</a></li>
+		    							<li><a href="#">مراجعة التدقيق اللغوي</a></li>
+		    							<li><a href="#">مراجعة مسودة  الخطاب</a></li>
+		    						</ul>
+		    					</li>
 		    				</ul>
 		    			</div>
 		    		</div>
@@ -213,10 +245,32 @@
 					<div class="fileList row"></div>
 				</div> -->
 
+				<div id="partialContainer"></div>
+
 				<section id="puppy_study" class="section mbmd mtmd pos-rel b_all ptlg pblg prlg pllg common-shadow bg-lightgray" style="display: none;">
 					<div style="display: flex; justify-content: space-between;">
-						<h2 class="title">إجراء يتطلب تفاعلك ( إعداد دراسة جدوي )</h2>
+						<h2 class="title">إجراء يتطلب تفاعلك ( إعداد دراسة جدوي - حامل المشعل)</h2>
 						<button class="btn btn-link pull-left close_section" data-target="puppy_study"><i class="fas fa-times"></i></button>
+					</div>
+
+					<div class="row mtmd">
+						<div class="col-md-5 col-sm-12">
+							<div class="row">
+								<div class="col-md-4 col-sm-12"><span class="text-primary">بيانات التكليف:</span></div>
+								<div class="col-md-8 col-sm-12">
+									Man001973
+								</div>
+							</div>
+						</div>
+						<div class="col-md-2 col-sm-0">&nbsp;</div>
+						<div class="col-md-5 col-sm-12">
+							<div class="row">
+								<div class="col-md-4 col-sm-12"><span class="text-primary">اسم التكليف:</span></div>
+								<div class="col-md-8 col-sm-12">
+									مراسلة 13 وزارة الاقتصاد والتخطيط
+								</div>
+							</div>
+						</div>
 					</div>
 
 					<form class="ptsm pbsm mtmd">
@@ -226,6 +280,12 @@
 							</li>
 							<li class="nav-item">
 								<a class="nav-link" id="#stepTab2" data-toggle="tab" href="#stepTab2" role="tab">بيانات عامة</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" id="#stepTab5" data-toggle="tab" href="#stepTab5" role="tab">المخرجات</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" id="#stepTab6" data-toggle="tab" href="#stepTab6" role="tab">المعالم</a>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link" id="#stepTab3" data-toggle="tab" href="#stepTab3" role="tab">الاساس المنطقي / التبرير</a>
@@ -322,7 +382,7 @@
 								<div class="row mtmd">
 									<div class="col-md-5 col-sm-12">
 										<div class="row">
-											<div class="col-md-3 col-sm-12"><span class="text-primary">التاريخ البدأ:</span> <span class="required">*</span></div>
+											<div class="col-md-3 col-sm-12"><span class="text-primary">تاريخ البدأ:</span> <span class="required">*</span></div>
 											<div class="col-md-9 col-sm-12">
 												<div class="input-date">
 													<input type="text" class="form-control" placeholder="التاريخ البدأ">
@@ -361,14 +421,42 @@
 											</div>
 										</div>
 									</div>
-									<div class="col-md-2 col-sm-0">&nbsp;</div>
+								</div>
+
+								<div class="mtlg">
+									<div class="text-left">
+										<button type="button" class="btn btn-primary btn-wide">التالي</button>
+									</div>
+								</div>
+							</div>
+
+							<div class="tab-pane fade" id="stepTab2" role="tabpanel" aria-labelledby="stepTab3">
+								<div class="mtmd mbmd"><h2 class="sec-title">بيانات دراسة الجدوي</h2></div>
+
+								<div class="row mtmd">
 									<div class="col-md-5 col-sm-12">
 										<div class="row">
-											<div class="col-md-3 col-sm-12"><span class="text-primary">اسم المشروع:</span> <span class="required">*</span></div>
+											<div class="col-md-3 col-sm-12"><span class="text-primary">المبادرة:</span> <span class="required">*</span></div>
 											<div class="col-md-9 col-sm-12">
 												<div class="select-wrapper">
 													<select name="" class="form-control">
-														<option>-- اسم المشروع</option>
+														<option>--اختار</option>
+														<option value="1">1</option>
+														<option value="2">2</option>
+													</select>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-2 col-sm-0">&nbsp;</div>
+									<div class="col-md-5 col-sm-12">
+										<div class="row">
+											<div class="col-md-3 col-sm-12"><span class="text-primary">البرنامج:</span> <span class="required">*</span></div>
+											<div class="col-md-9 col-sm-12">
+												<div class="select-wrapper">
+													<select name="" class="form-control">
+														<option>--اختار</option>
+														<option value="1">حوالي عشرين مليون</option>
 														<option value="2">2</option>
 													</select>
 												</div>
@@ -377,40 +465,27 @@
 									</div>
 								</div>
 
-								<div class="mtlg">
-									<button type="button" class="float-right btn btn-gray btn-wide">رجوع</button>
-									<div class="text-left">
-										<button type="button" class="btn btn-primary btn-wide">التالي</button>
-										<button type="button" class="btn btn-primary-reverse btn-wide">حفظ</button>
-									</div>
-								</div>
-							</div>
-
-							<div class="tab-pane fade" id="stepTab2" role="tabpanel" aria-labelledby="stepTab3">
-								<div class="mtmd mbmd"><h2 class="sec-title">بيانات دراسة الجدوي</h2></div>
-
-								<div class="mtmd">
-									<div class="mbsm"><span class="text-primary">البرنامج المرتبط وضعه:</span> <span class="required">*</span></div>
-									<div>
-										<input name="" class="form-control" placeholder="البرنامج المرتبط وضعه...">
-									</div>
-								</div>
-
 								<div class="row mtmd">
 									<div class="col-md-5 col-sm-12">
 										<div class="row">
-											<div class="col-md-3 col-sm-12"><span class="text-primary">منافع قابلة للقياس:</span> <span class="required">*</span></div>
+											<div class="col-md-3 col-sm-12"><span class="text-primary">وصف البرنامج:</span> <span class="required">*</span></div>
 											<div class="col-md-9 col-sm-12">
-												<textarea name="" class="form-control" rows="3" placeholder="منافع هنا..."></textarea>
+												<div class="select-wrapper">
+													<select name="" class="form-control">
+														<option>--اختار</option>
+														<option value="1">1</option>
+														<option value="2">2</option>
+													</select>
+												</div>
 											</div>
 										</div>
 									</div>
 									<div class="col-md-2 col-sm-0">&nbsp;</div>
 									<div class="col-md-5 col-sm-12">
 										<div class="row">
-											<div class="col-md-3 col-sm-12"><span class="text-primary">الافتراضات:</span> <span class="required">*</span></div>
+											<div class="col-md-3 col-sm-12"><span class="text-primary">منافع قابلة للقياس ولها مستهدف واحد:</span> <span class="required">*</span></div>
 											<div class="col-md-9 col-sm-12">
-												<textarea name="" class="form-control" rows="3" placeholder="الافتراضات هنا..."></textarea>
+												<textarea name="" class="form-control" rows="2" placeholder="منافع هنا..."></textarea>
 											</div>
 										</div>
 									</div>
@@ -419,18 +494,29 @@
 								<div class="row mtmd">
 									<div class="col-md-5 col-sm-12">
 										<div class="row">
-											<div class="col-md-3 col-sm-12"><span class="text-primary">وصف المشروع مع السياق:</span> <span class="required">*</span></div>
+											<div class="col-md-3 col-sm-12"><span class="text-primary">الافتراضات</span> <span class="required">*</span></div>
 											<div class="col-md-9 col-sm-12">
-												<textarea name="" class="form-control" rows="3" placeholder="وصف المشروع مع السياق..."></textarea>
+												<textarea name="" class="form-control" rows="2" placeholder="الافتراضات هنا..."></textarea>
 											</div>
 										</div>
 									</div>
 									<div class="col-md-2 col-sm-0">&nbsp;</div>
 									<div class="col-md-5 col-sm-12">
 										<div class="row">
-											<div class="col-md-3 col-sm-12"><span class="text-primary">البدائل / الخيارات:</span> <span class="required">*</span></div>
+											<div class="col-md-3 col-sm-12"><span class="text-primary">وصف المبادرة/المشروع مع السياق الاستراتيجي والمعالم الرئيسية لها:</span> <span class="required">*</span></div>
 											<div class="col-md-9 col-sm-12">
-												<textarea name="" class="form-control" rows="3" placeholder="البدائل / الخيارات هنا..."></textarea>
+												<textarea name="" class="form-control" rows="2" placeholder="وصف هنا..."></textarea>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="row mtmd">
+									<div class="col-md-5 col-sm-12">
+										<div class="row">
+											<div class="col-md-3 col-sm-12"><span class="text-primary">الخيارات والبدائل</span> <span class="required">*</span></div>
+											<div class="col-md-9 col-sm-12">
+												<textarea name="" class="form-control" rows="2" placeholder="الخيارات هنا..."></textarea>
 											</div>
 										</div>
 									</div>
@@ -508,13 +594,34 @@
 								</div>
 
 								<div class="mtlg">
-									<button type="button" class="float-right btn btn-gray btn-wide">رجوع</button>
 									<div class="text-left">
+										<button type="button" class="btn btn-gray btn-wide">رجوع</button>
 										<button type="button" class="btn btn-primary btn-wide">التالي</button>
-										<button type="button" class="btn btn-primary-reverse btn-wide">حفظ</button>
 									</div>
 								</div>
 
+							</div>
+
+							<div class="tab-pane fade" id="stepTab5" role="tabpanel" aria-labelledby="stepTab5">
+								المخرجات
+
+								<div class="mtlg">
+									<div class="text-left">
+										<button type="button" class="btn btn-gray btn-wide">رجوع</button>
+										<button type="button" class="btn btn-primary btn-wide">التالي</button>
+									</div>
+								</div>
+							</div>
+
+							<div class="tab-pane fade" id="stepTab6" role="tabpanel" aria-labelledby="stepTab6">
+								المعالم
+
+								<div class="mtlg">
+									<div class="text-left">
+										<button type="button" class="btn btn-gray btn-wide">رجوع</button>
+										<button type="button" class="btn btn-primary btn-wide">التالي</button>
+									</div>
+								</div>
 							</div>
 
 							<div class="tab-pane fade" id="stepTab3" role="tabpanel" aria-labelledby="stepTab3">
@@ -548,10 +655,9 @@
 								</div>
 
 								<div class="mtlg">
-									<button type="button" class="float-right btn btn-gray btn-wide">رجوع</button>
 									<div class="text-left">
+										<button type="button" class="btn btn-gray btn-wide">رجوع</button>
 										<button type="button" class="btn btn-primary btn-wide">التالي</button>
-										<button type="button" class="btn btn-primary-reverse btn-wide">حفظ</button>
 									</div>
 								</div>
 
@@ -857,9 +963,8 @@
 								</div>
 
 								<div class="mtlg">
-									<button type="button" class="float-right btn btn-gray btn-wide">رجوع</button>
 									<div class="text-left">
-										<button type="button" class="btn btn-primary btn-wide">التالي</button>
+										<button type="button" class="btn btn-gray btn-wide">رجوع</button>
 										<button type="button" class="btn btn-primary-reverse btn-wide">حفظ</button>
 									</div>
 								</div>
@@ -1009,86 +1114,945 @@
 					</form>
 				</section>
 
-
 				<section id="create_project_charter" class="section mbmd mtmd pos-rel b_all ptlg pblg prlg pllg common-shadow" style="display: none;">
 					<div style="display: flex; justify-content: space-between;">
-						<h2 class="title">إنشاء ميثاق مشروع</h2>
+						<h2 class="title">طلب البدأ في إنشاء ميثاق مشروع</h2>
 						<button class="btn btn-link pull-left close_section" data-target="create_project_charter"><i class="fas fa-times"></i></button>
 					</div>
 
-					<div class="mtlg">
-						<div class="title-wrapper mbmd">
-							<h2 class="sec-title"><small><i class="fas fa-circle"></i></small>&nbsp; بيانات دراسة الجدوي</h2>
+					<form action="" class="mtmd">
+						<div class="row mtsm">
+							<div class="col-sm-2">
+								<label class="col-form-label">اسم الميثاق : <span class="required">*</span></label>
+							</div>
+							<div class="col-md-7 col-sm-10">
+								<input type="text" class="form-control" placeholder="اسم الميثاق">
+							</div>
 						</div>
 
-						<div class="rows-even-odd mtmd">
-							<div class="row">
-								<div class="col-md-2 col-sm-12"><span class="text-primary">النسحة :</span></div>
-								<div class="col-md-10 col-sm-12"><span>H193r7g</span></div>
+						<div class="row mtsm">
+							<div class="col-sm-2">
+								<label class="col-form-label">دراسة الجدوي : <span class="required">*</span></label>
 							</div>
-							<div class="row">
-								<div class="col-md-2 col-sm-12"><span class="text-primary">التاريخ :</span></div>
-								<div class="col-md-10 col-sm-12"><span>12/02/2020</span></div>
-							</div>
-							<div class="row">
-								<div class="col-md-2 col-sm-12"><span class="text-primary">دراسة الجدوي :</span></div>
-								<div class="col-md-10 col-sm-12"><span>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص.</span></div>
-							</div>
-
-							<div class="row mtmd">
-								<div class="col-sm-4">
-									<a href="#" class="file file-download">
-										<span class="filename">ملف التقرير.docx</span>
-										<span><span class="size">حجك الملف: 2.34 ك/ب</span></span>
-									</a>
+							<div class="col-md-7 col-sm-10">
+								<div class="select-wrapper">
+									<select name="" class="form-control">
+										<option >اختار</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+									</select>
 								</div>
 							</div>
+						</div>
 
+						<div class="row mtsm">
+							<div class="col-sm-2">
+								<label class="col-form-label">مححفظة المشاريع : <span class="required">*</span></label>
+							</div>
+							<div class="col-md-7 col-sm-10">
+								<div class="select-wrapper">
+									<select name="" class="form-control">
+										<option >اختار</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+									</select>
+								</div>
+							</div>
+						</div>
+
+						<div class="row mtsm">
+							<div class="col-sm-2">
+								<label class="col-form-label">ملحظات : </label>
+							</div>
+							<div class="col-md-7 col-sm-10">
+								<textarea name="" class="form-control" rows="3"></textarea>
+							</div>
+						</div>
+
+						<div class="row mtmd">
+					  		<label class="col-sm-2 col-form-label">&nbsp;</label>
+					  		<div class="col-md-7 col-sm-10">
+						  		<button type="submit" class="btn btn-wide btn-primary">حفظ</button>
+					  		</div>
+					  	</div>
+					</form>
+				</section>
+
+				<section id="puppy_study_review" class="section mbmd mtmd pos-rel b_all ptlg pblg prlg pllg common-shadow" style="display: none;">
+					<div style="display: flex; justify-content: space-between;">
+						<h2 class="title">&nbsp;</h2>
+						<button class="btn btn-link pull-left close_section" data-target="puppy_study_review"><i class="fas fa-times"></i></button>
+					</div>
+					<div class="accordion">
+						<div class="card">
+							<div class="card-header" id="headTwelve">
+								<h2>
+									<button type="button" class="collapsed" data-toggle="collapse" data-target="#colTwelve" aria-expanded="true" aria-controls="colTwelve"></button>
+									<span style="color:#004C45;">إجراء يتطلب تفاعلك (مراجعة دراسة جدوي - مالك العمل)</span>
+								</h2>
+							</div>
+
+							<div id="colTwelve" class="collapse" aria-labelledby="headTwelve">
+								<div class="card-body">
+
+									<div class="row mtmd mbmd">
+										<div class="col-md-5 col-sm-12">
+											<div class="row">
+												<div class="col-md-4 col-sm-12"><span class="text-primary">رقم التكليف:</span></div>
+												<div class="col-md-8 col-sm-12">
+													Man001973
+												</div>
+											</div>
+										</div>
+										<div class="col-md-2 col-sm-0">&nbsp;</div>
+										<div class="col-md-5 col-sm-12">
+											<div class="row">
+												<div class="col-md-4 col-sm-12"><span class="text-primary">اسم التكليف:</span></div>
+												<div class="col-md-8 col-sm-12">
+													مراسلة 13 وزارة الاقتصاد والتخطيط
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div>
+										<div class="title-wrapper prsm plsm">
+											<h2 class="sec-title"><small><i class="fas fa-circle"></i></small>&nbsp; بيانات دراسة جدوي</h2>
+										</div>
+
+										<div class="rows-even-odd mtmd">
+											<div class="row">
+												<div class="col-sm-12"><span class="text-primary">عنوان دراسة جدوي :</span></div>
+												<div class="col-sm-12 mtsm"><h6>تعديل الفقرة (ب) من المادة الثانية من لائحة الترقيات... ـ</h6></div>
+											</div>
+
+											<div class="row">
+												<div class="col-sm-6">
+													<div class="row">
+														<div class="col-sm-5"><span class="text-primary">:النسخة</span></div>
+														<div class="col-sm-7"><span>T1000205</span></div>
+													</div>
+												</div>
+												<div class="col-sm-6">
+													<div class="row">
+														<div class="col-sm-5"><span class="text-primary">التاريخ :</span></div>
+														<div class="col-sm-7"><span>1441/10/1</span></div>
+													</div>
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="col-sm-6">
+													<div class="row">
+														<div class="col-sm-5"><span class="text-primary">حالة التكرار :</span></div>
+														<div class="col-sm-7"><span>جديد</span></div>
+													</div>
+												</div>
+												<div class="col-sm-6">
+													<div class="row">
+														<div class="col-sm-5"><span class="text-primary">التكلفة المتوقعة :</span></div>
+														<div class="col-sm-7"><span>١٠٠٠ ريال</span></div>
+													</div>
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="col-sm-6">
+													<div class="row">
+														<div class="col-sm-5"><span class="text-primary">الاهمية :</span></div>
+														<div class="col-sm-7"><span>تكليف</span></div>
+													</div>
+												</div>
+												<div class="col-sm-6">
+													<div class="row">
+														<div class="col-sm-5"><span class="text-primary">تاريخ البدء المتوقع :</span></div>
+														<div class="col-sm-7"><span>13/02/2020</span></div>
+													</div>
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="col-sm-6">
+													<div class="row">
+														<div class="col-sm-5"><span class="text-primary">تاريخ الانتهاء المتوقع :</span></div>
+														<div class="col-sm-7"><span>13/02/2020</span></div>
+													</div>
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="col-sm-6">
+													<div class="row">
+														<div class="col-sm-5"><span class="text-primary">يوجد اعتمادات؟ :</span></div>
+														<div class="col-sm-7"><span>نعم</span></div>
+													</div>
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="col-sm-2"><span class="text-primary">التعليقات :</span></div>
+												<div class="col-sm-10">
+													<textarea name="" class="form-control" rows="3"></textarea>
+												</div>
+											</div>
+										</div>
+									</div>
+													
+									<div class="mtmd ptmd bt">
+										<div class="title-wrapper prsm plsm">
+											<h2 class="sec-title"><small><i class="fas fa-circle"></i></small>&nbsp; بيانات عامة</h2>
+										</div>
+										
+										<div class="rows-even-odd mtmd">
+											<div class="row">
+												<div class="col-sm-2"><span class="text-primary">التعليقات :</span></div>
+												<div class="col-sm-10">
+													<textarea name="" class="form-control" rows="3"></textarea>
+												</div>
+											</div>
+											<!-- <div class="row">
+												<div class="col-md-4 col-sm-12">
+													<div class="row">
+														<label class="col-md-4 col-sm-12 text-primary">رقم التكليف:</label>
+														<div class="col-md-8 col-sm-12">
+															<span>T8476465</span>
+														</div>
+													</div>
+												</div>
+												<div class="col-md-4 col-sm-12">
+													<div class="row">
+														<label class="col-md-4 col-sm-12 text-primary">التاريخ:</label>
+														<div class="col-md-8 col-sm-12">
+															<span>23/02/2020</span>
+														</div>
+													</div>
+												</div>
+												<div class="col-md-4 col-sm-12">
+													<div class="row">
+														<label class="col-md-4 col-sm-12 text-primary">البرنامج المرتبط وضعه:</label>
+														<div class="col-md-8 col-sm-12">
+															<span>جاري التحطيط</span>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="row">
+												<label class="col-md-3 col-sm-12 text-primary">اسم التكليف</label>
+												<div class="col-md-8 col-sm-12"><span>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها</span></div>
+											</div>
+
+											<div class="row">
+												<label class="col-md-3 col-sm-12 text-primary">منافع قابلة للقياس ولها مستهدف محدد</label>
+												<div class="col-md-8 col-sm-12"><span>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها</span></div>
+											</div>
+
+											<div class="row">
+												<label class="col-md-3 col-sm-12 text-primary">وصف المشروع مع القياس الاستراتيجي والمعالم الرئيسية</label>
+												<div class="col-md-8 col-sm-12"><span>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها</span></div>
+											</div>
+
+											<div class="row">
+												<label class="col-md-3 col-sm-12 text-primary">البدائل / الخيارات</label>
+												<div class="col-md-8 col-sm-12"><span>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها</span></div>
+											</div>
+
+											<div class="row mtlg">
+												<div class="col-md-6 col-sm-12">
+													<div><h2 class="sec-title">اهداف الوزارة الاستراتيجية ذات الصلة</h2></div>
+													<ul class="text-large mtmd">
+														<li>تطوير التوجه الاستراتيجي لاولويات التنمية الوطنية</li>
+														<li>تطوير ومواءمة السياسات الاقتصادية</li>
+														<li>تمكين عملية اتخاذ القرار من خلال التحليل المبني علي البراهين</li>
+													</ul>
+												</div>
+												<div class="col-md-6 col-sm-12">
+													<div><h2 class="sec-title">المنافع / الاثر</h2></div>
+													<div class="row mtmd">
+														<div class="col-md-6 col-sm-12">
+															<h5>المنافع المباشرة</h5>
+															<ul class="text-large mtsm">
+																<li>إيرادات</li>
+																<li>رفع كفاءة الانفاق</li>
+															</ul>
+														</div>
+														<div class="col-md-6 col-sm-12">
+															<h5>المنافع غير المباشرة</h5>
+															<ul class="text-large mtsm">
+																<li>منفعة اجتماعية</li>
+																<li>تمكين اتخاذ القرار</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div> -->
+										</div>
+									</div>
+
+									<div class="mtmd ptmd bt">
+										<div class="title-wrapper prsm plsm">
+											<h2 class="sec-title"><small><i class="fas fa-circle"></i></small>&nbsp; الاساس المنطقي / التبرير</h2>
+										</div>
+										
+										<div class="rows-even-odd mtmd">
+											<div class="row">
+												<div class="col-sm-2"><span class="text-primary">التعليقات :</span></div>
+												<div class="col-sm-10">
+													<textarea name="" class="form-control" rows="3"></textarea>
+												</div>
+											</div>
+											<!-- <div class="row">
+												<label class="col-md-3 col-sm-12 text-primary">منافع قابلة للقياس ولها مستهدف محدد</label>
+												<div class="col-md-8 col-sm-12"><span>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها</span></div>
+											</div>
+
+											<div class="row">
+												<label class="col-md-3 col-sm-12 text-primary">وصف المشروع مع القياس الاستراتيجي والمعالم الرئيسية</label>
+												<div class="col-md-8 col-sm-12"><span>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها</span></div>
+											</div>
+
+											<div class="row">
+												<label class="col-md-3 col-sm-12 text-primary">البدائل / الخيارات</label>
+												<div class="col-md-8 col-sm-12"><span>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها</span></div>
+											</div> -->
+										</div>
+									</div>
+
+									<div class="mtmd ptmd bt">
+										<div class="title-wrapper prsm plsm">
+											<h2 class="sec-title"><small><i class="fas fa-circle"></i></small>&nbsp; المخرجات</h2>
+										</div>
+										
+										<div class="rows-even-odd mtmd">
+											<div class="row">
+												<div class="col-sm-2"><span class="text-primary">التعليقات :</span></div>
+												<div class="col-sm-10">
+													<textarea name="" class="form-control" rows="3"></textarea>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="mtmd ptmd bt">
+										<div class="title-wrapper prsm plsm">
+											<h2 class="sec-title"><small><i class="fas fa-circle"></i></small>&nbsp; المعالم</h2>
+										</div>
+										
+										<div class="rows-even-odd mtmd">
+											<div class="row">
+												<div class="col-sm-2"><span class="text-primary">التعليقات :</span></div>
+												<div class="col-sm-10">
+													<textarea name="" class="form-control" rows="3"></textarea>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="mtmd ptmd bt">
+										<div class="title-wrapper prsm plsm">
+											<h2 class="sec-title"><small><i class="fas fa-circle"></i></small>&nbsp; المتطلبات</h2>
+										</div>
+
+										<div class="rows-even-odd mtmd">
+											<div class="row">
+												<div class="col-sm-2"><span class="text-primary">التعليقات :</span></div>
+												<div class="col-sm-10">
+													<textarea name="" class="form-control" rows="3"></textarea>
+												</div>
+											</div>
+										</div>
+										
+										<!-- <div class="mtlg">
+											<div><h2 class="sec-title">اهداف الوزارة ذات الاستراتيجية</h2></div>
+
+											<div class="flex mtmd justify-between">
+												<div>
+													<div><i class="fas fa-circle"></i>&nbsp; موارد بشرية</div>
+												  	<div class="mtsm">
+												  		<span class="text-primary">التكلفة التقريبية: </span> <span>1000 ريال</span>
+												  	</div>
+												</div>
+												<div>
+													<div><i class="fas fa-circle"></i>&nbsp; استشارات</div>
+												  	<div class="mtsm">
+												  		<span class="text-primary">التكلفة التقريبية: </span> <span>1000 ريال</span>
+												  	</div>
+												</div>
+												<div>
+													<div><i class="fas fa-circle"></i>&nbsp; شراء الدراسات / التقارير</div>
+												  	<div class="mtsm">
+												  		<span class="text-primary">التكلفة التقريبية: </span> <span>1000 ريال</span>
+												  	</div>
+												</div>
+												<div>
+													<div><i class="fas fa-circle"></i>&nbsp; برنامج تقنية المعلومات</div>
+												  	<div class="mtsm">
+												  		<span class="text-primary">التكلفة التقريبية: </span> <span>1000 ريال</span>
+												  	</div>
+												</div>
+												<div>
+													<div><i class="fas fa-circle"></i>&nbsp; استشارات</div>
+												  	<div class="mtsm">
+												  		<span class="text-primary">التكلفة التقريبية: </span> <span>1000 ريال</span>
+												  	</div>
+												</div>
+											</div>
+
+											<div class="mtxlg ptmd text-center">
+												<h5><span class="text-primary">إجمالي التكلفة:</span> <span class="text-gray">5000 ريال</span></h5>
+											</div>
+										</div>
+
+										<div class="mtlg ptlg bt">
+											<div><h2 class="sec-title">نوع الموارد البشرية</h2></div>
+											<div class="flex mtmd justify-between">
+												<div>
+													<div><i class="fas fa-circle"></i>&nbsp; الراعي / الادارة التنفيذية</div>
+												  	<div class="mtsm">
+												  		<span class="text-primary">المدة: </span> <span>10 ايام</span>
+												  	</div>
+												  	<div class="mtsm">
+												  		<span class="text-primary">الدوام: </span> <span>جزئي</span>
+												  	</div>
+												  	<div class="mtsm">
+												  		<span class="text-primary">نسبة الدوام الجزئي: </span> <span>40%</span>
+												  	</div>
+												</div>
+												<div>
+													<div><i class="fas fa-circle"></i>&nbsp; وكيل / مدير</div>
+												  	<div class="mtsm">
+												  		<span class="text-primary">المدة: </span> <span>10 ايام</span>
+												  	</div>
+												  	<div class="mtsm">
+												  		<span class="text-primary">الدوام: </span> <span>جزئي</span>
+												  	</div>
+												  	<div class="mtsm">
+												  		<span class="text-primary">نسبة الدوام الجزئي: </span> <span>40%</span>
+												  	</div>
+												</div>
+												<div>
+													<div><i class="fas fa-circle"></i>&nbsp; مدير مشروع</div>
+												  	<div class="mtsm">
+												  		<span class="text-primary">المدة: </span> <span>10 ايام</span>
+												  	</div>
+												  	<div class="mtsm">
+												  		<span class="text-primary">الدوام: </span> <span>جزئي</span>
+												  	</div>
+												  	<div class="mtsm">
+												  		<span class="text-primary">نسبة الدوام الجزئي: </span> <span>40%</span>
+												  	</div>
+												</div>
+												<div>
+													<div><i class="fas fa-circle"></i>&nbsp; حامل مشعل المشروع</div>
+												  	<div class="mtsm">
+												  		<span class="text-primary">المدة: </span> <span>10 ايام</span>
+												  	</div>
+												  	<div class="mtsm">
+												  		<span class="text-primary">الدوام: </span> <span>جزئي</span>
+												  	</div>
+												  	<div class="mtsm">
+												  		<span class="text-primary">نسبة الدوام الجزئي: </span> <span>40%</span>
+												  	</div>
+												</div>
+												<div>
+													<div><i class="fas fa-circle"></i>&nbsp; خبراء في نفس المجال</div>
+												  	<div class="mtsm">
+												  		<span class="text-primary">المدة: </span> <span>10 ايام</span>
+												  	</div>
+												  	<div class="mtsm">
+												  		<span class="text-primary">الدوام: </span> <span>جزئي</span>
+												  	</div>
+												  	<div class="mtsm">
+												  		<span class="text-primary">نسبة الدوام الجزئي: </span> <span>40%</span>
+												  	</div>
+												</div>
+												<div>
+													<div><i class="fas fa-circle"></i>&nbsp; اخري</div>
+												  	<div class="mtsm">
+												  		<span class="text-primary">المدة: </span> <span>10 ايام</span>
+												  	</div>
+												  	<div class="mtsm">
+												  		<span class="text-primary">الدوام: </span> <span>جزئي</span>
+												  	</div>
+												  	<div class="mtsm">
+												  		<span class="text-primary">نسبة الدوام الجزئي: </span> <span>40%</span>
+												  	</div>
+												</div>
+											</div>
+
+											<div class="rows-even-odd mtxlg">
+												<div class="row">
+													<label class="col-md-3 col-sm-12 text-primary">حكومة المبادرة</label>
+													<div class="col-md-8 col-sm-12"><span>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها</span></div>
+												</div>
+
+												<div class="row">
+													<label class="col-md-3 col-sm-12 text-primary">موجز الاستشارات الاضافية / نطاق المشتريات الاخري</label>
+													<div class="col-md-8 col-sm-12"><span>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها</span></div>
+												</div>
+
+												<div class="row">
+													<label class="col-md-3 col-sm-12 text-primary">اصحاب المصلحة</label>
+													<div class="col-md-8 col-sm-12"><span>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها</span></div>
+												</div>
+
+												<div class="row">
+													<label class="col-md-3 col-sm-12 text-primary">نوع المشاركة</label>
+													<div class="col-md-8 col-sm-12"><span>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها</span></div>
+												</div>
+											</div>
+										</div> -->
+									</div>
+
+									<div class="mtxlg text-left">
+										<button type="button" class="btn btn-primary btn-wide">موافقة</button>
+										<button type="button" class="btn btn-danger btn-wide">إعادة إلي حامل المشعل</button>
+									</div>
+
+								</div>
+							</div>
 						</div>
 					</div>
+				</section>
 
-					<div class="mtlg ptlg bt">
-						<div class="title-wrapper mbmd">
-							<h2 class="sec-title"><small><i class="fas fa-circle"></i></small>&nbsp; إنشاء بيانات ميثاق مشروع</h2>
-						</div>
-
-						<form action="" class="mtmd">
-							<div class="row mtsm">
-								<div class="col-sm-2">
-									<label class="col-form-label">اسم المشروع :</label>
-								</div>
-								<div class="col-md-7 col-sm-10">
-									<input type="text" class="form-control" placeholder="اسم المشروع">
-								</div>
+				<section id="puppy_study_strategy_review" class="section mbmd mtmd pos-rel b_all ptlg pblg prlg pllg common-shadow" style="display: none;">
+					<div style="display: flex; justify-content: space-between;">
+						<h2 class="title">&nbsp;</h2>
+						<button class="btn btn-link pull-left close_section" data-target="puppy_study_strategy_review"><i class="fas fa-times"></i></button>
+					</div>
+					<div class="accordion">
+						<div class="card">
+							<div class="card-header" id="jndsjkdnjefb">
+								<h2>
+									<button type="button" class="collapsed" data-toggle="collapse" data-target="#jnnewjdbdfeh" aria-expanded="true" aria-controls="jnnewjdbdfeh"></button>
+									<span style="color:#004C45;">إجراء يتطلب تفاعلك (مراجعة دراسة جدوي - الإدارة الاستراتيجية)</span>
+								</h2>
 							</div>
 
-							<div class="row mtsm">
-								<div class="col-sm-2">
-									<label class="col-form-label">اسم المحفظة :</label>
-								</div>
-								<div class="col-md-7 col-sm-10">
-									<div class="select-wrapper">
-										<select name="" class="form-control">
-											<option >المحفظة</option>
-											<option value="1">1</option>
-											<option value="2">2</option>
-										</select>
+							<div id="jnnewjdbdfeh" class="collapse" aria-labelledby="jndsjkdnjefb">
+								<div class="card-body">
+
+									<div class="row mtmd mbmd">
+										<div class="col-md-5 col-sm-12">
+											<div class="row">
+												<div class="col-md-4 col-sm-12"><span class="text-primary">رقم التكليف:</span></div>
+												<div class="col-md-8 col-sm-12">
+													Man001973
+												</div>
+											</div>
+										</div>
+										<div class="col-md-2 col-sm-0">&nbsp;</div>
+										<div class="col-md-5 col-sm-12">
+											<div class="row">
+												<div class="col-md-4 col-sm-12"><span class="text-primary">اسم التكليف:</span></div>
+												<div class="col-md-8 col-sm-12">
+													مراسلة 13 وزارة الاقتصاد والتخطيط
+												</div>
+											</div>
+										</div>
 									</div>
+
+									<div>
+										<div class="title-wrapper prsm plsm">
+											<h2 class="sec-title"><small><i class="fas fa-circle"></i></small>&nbsp; بيانات دراسة جدوي</h2>
+										</div>
+
+										<div class="rows-even-odd mtmd">
+											<div class="row">
+												<div class="col-sm-12"><span class="text-primary">عنوان دراسة جدوي :</span></div>
+												<div class="col-sm-12 mtsm"><h6>تعديل الفقرة (ب) من المادة الثانية من لائحة الترقيات... ـ</h6></div>
+											</div>
+
+											<div class="row">
+												<div class="col-sm-6">
+													<div class="row">
+														<div class="col-sm-5"><span class="text-primary">:النسخة</span></div>
+														<div class="col-sm-7"><span>T1000205</span></div>
+													</div>
+												</div>
+												<div class="col-sm-6">
+													<div class="row">
+														<div class="col-sm-5"><span class="text-primary">التاريخ :</span></div>
+														<div class="col-sm-7"><span>1441/10/1</span></div>
+													</div>
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="col-sm-6">
+													<div class="row">
+														<div class="col-sm-5"><span class="text-primary">حالة التكرار :</span></div>
+														<div class="col-sm-7"><span>جديد</span></div>
+													</div>
+												</div>
+												<div class="col-sm-6">
+													<div class="row">
+														<div class="col-sm-5"><span class="text-primary">التكلفة المتوقعة :</span></div>
+														<div class="col-sm-7"><span>١٠٠٠ ريال</span></div>
+													</div>
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="col-sm-6">
+													<div class="row">
+														<div class="col-sm-5"><span class="text-primary">الاهمية :</span></div>
+														<div class="col-sm-7"><span>تكليف</span></div>
+													</div>
+												</div>
+												<div class="col-sm-6">
+													<div class="row">
+														<div class="col-sm-5"><span class="text-primary">تاريخ البدء المتوقع :</span></div>
+														<div class="col-sm-7"><span>13/02/2020</span></div>
+													</div>
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="col-sm-6">
+													<div class="row">
+														<div class="col-sm-5"><span class="text-primary">تاريخ الانتهاء المتوقع :</span></div>
+														<div class="col-sm-7"><span>13/02/2020</span></div>
+													</div>
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="col-sm-6">
+													<div class="row">
+														<div class="col-sm-5"><span class="text-primary">يوجد اعتمادات؟ :</span></div>
+														<div class="col-sm-7"><span>نعم</span></div>
+													</div>
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="col-sm-2"><span class="text-primary">التعليقات :</span></div>
+												<div class="col-sm-10">
+													<textarea name="" class="form-control" rows="3"></textarea>
+												</div>
+											</div>
+										</div>
+									</div>
+													
+									<div class="mtmd ptmd bt">
+										<div class="title-wrapper prsm plsm">
+											<h2 class="sec-title"><small><i class="fas fa-circle"></i></small>&nbsp; بيانات عامة</h2>
+										</div>
+										
+										<div class="rows-even-odd mtmd">
+											<div class="row">
+												<div class="col-sm-2"><span class="text-primary">التعليقات :</span></div>
+												<div class="col-sm-10">
+													<textarea name="" class="form-control" rows="3"></textarea>
+												</div>
+											</div>
+											<!-- <div class="row">
+												<div class="col-md-4 col-sm-12">
+													<div class="row">
+														<label class="col-md-4 col-sm-12 text-primary">رقم التكليف:</label>
+														<div class="col-md-8 col-sm-12">
+															<span>T8476465</span>
+														</div>
+													</div>
+												</div>
+												<div class="col-md-4 col-sm-12">
+													<div class="row">
+														<label class="col-md-4 col-sm-12 text-primary">التاريخ:</label>
+														<div class="col-md-8 col-sm-12">
+															<span>23/02/2020</span>
+														</div>
+													</div>
+												</div>
+												<div class="col-md-4 col-sm-12">
+													<div class="row">
+														<label class="col-md-4 col-sm-12 text-primary">البرنامج المرتبط وضعه:</label>
+														<div class="col-md-8 col-sm-12">
+															<span>جاري التحطيط</span>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="row">
+												<label class="col-md-3 col-sm-12 text-primary">اسم التكليف</label>
+												<div class="col-md-8 col-sm-12"><span>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها</span></div>
+											</div>
+
+											<div class="row">
+												<label class="col-md-3 col-sm-12 text-primary">منافع قابلة للقياس ولها مستهدف محدد</label>
+												<div class="col-md-8 col-sm-12"><span>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها</span></div>
+											</div>
+
+											<div class="row">
+												<label class="col-md-3 col-sm-12 text-primary">وصف المشروع مع القياس الاستراتيجي والمعالم الرئيسية</label>
+												<div class="col-md-8 col-sm-12"><span>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها</span></div>
+											</div>
+
+											<div class="row">
+												<label class="col-md-3 col-sm-12 text-primary">البدائل / الخيارات</label>
+												<div class="col-md-8 col-sm-12"><span>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها</span></div>
+											</div>
+
+											<div class="row mtlg">
+												<div class="col-md-6 col-sm-12">
+													<div><h2 class="sec-title">اهداف الوزارة الاستراتيجية ذات الصلة</h2></div>
+													<ul class="text-large mtmd">
+														<li>تطوير التوجه الاستراتيجي لاولويات التنمية الوطنية</li>
+														<li>تطوير ومواءمة السياسات الاقتصادية</li>
+														<li>تمكين عملية اتخاذ القرار من خلال التحليل المبني علي البراهين</li>
+													</ul>
+												</div>
+												<div class="col-md-6 col-sm-12">
+													<div><h2 class="sec-title">المنافع / الاثر</h2></div>
+													<div class="row mtmd">
+														<div class="col-md-6 col-sm-12">
+															<h5>المنافع المباشرة</h5>
+															<ul class="text-large mtsm">
+																<li>إيرادات</li>
+																<li>رفع كفاءة الانفاق</li>
+															</ul>
+														</div>
+														<div class="col-md-6 col-sm-12">
+															<h5>المنافع غير المباشرة</h5>
+															<ul class="text-large mtsm">
+																<li>منفعة اجتماعية</li>
+																<li>تمكين اتخاذ القرار</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div> -->
+										</div>
+									</div>
+
+									<div class="mtmd ptmd bt">
+										<div class="title-wrapper prsm plsm">
+											<h2 class="sec-title"><small><i class="fas fa-circle"></i></small>&nbsp; الاساس المنطقي / التبرير</h2>
+										</div>
+										
+										<div class="rows-even-odd mtmd">
+											<div class="row">
+												<div class="col-sm-2"><span class="text-primary">التعليقات :</span></div>
+												<div class="col-sm-10">
+													<textarea name="" class="form-control" rows="3"></textarea>
+												</div>
+											</div>
+											<!-- <div class="row">
+												<label class="col-md-3 col-sm-12 text-primary">منافع قابلة للقياس ولها مستهدف محدد</label>
+												<div class="col-md-8 col-sm-12"><span>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها</span></div>
+											</div>
+
+											<div class="row">
+												<label class="col-md-3 col-sm-12 text-primary">وصف المشروع مع القياس الاستراتيجي والمعالم الرئيسية</label>
+												<div class="col-md-8 col-sm-12"><span>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها</span></div>
+											</div>
+
+											<div class="row">
+												<label class="col-md-3 col-sm-12 text-primary">البدائل / الخيارات</label>
+												<div class="col-md-8 col-sm-12"><span>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها</span></div>
+											</div> -->
+										</div>
+									</div>
+
+									<div class="mtmd ptmd bt">
+										<div class="title-wrapper prsm plsm">
+											<h2 class="sec-title"><small><i class="fas fa-circle"></i></small>&nbsp; المخرجات</h2>
+										</div>
+										
+										<div class="rows-even-odd mtmd">
+											<div class="row">
+												<div class="col-sm-2"><span class="text-primary">التعليقات :</span></div>
+												<div class="col-sm-10">
+													<textarea name="" class="form-control" rows="3"></textarea>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="mtmd ptmd bt">
+										<div class="title-wrapper prsm plsm">
+											<h2 class="sec-title"><small><i class="fas fa-circle"></i></small>&nbsp; المعالم</h2>
+										</div>
+										
+										<div class="rows-even-odd mtmd">
+											<div class="row">
+												<div class="col-sm-2"><span class="text-primary">التعليقات :</span></div>
+												<div class="col-sm-10">
+													<textarea name="" class="form-control" rows="3"></textarea>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="mtmd ptmd bt">
+										<div class="title-wrapper prsm plsm">
+											<h2 class="sec-title"><small><i class="fas fa-circle"></i></small>&nbsp; المتطلبات</h2>
+										</div>
+
+										<div class="rows-even-odd mtmd">
+											<div class="row">
+												<div class="col-sm-2"><span class="text-primary">التعليقات :</span></div>
+												<div class="col-sm-10">
+													<textarea name="" class="form-control" rows="3"></textarea>
+												</div>
+											</div>
+										</div>
+										
+										<!-- <div class="mtlg">
+											<div><h2 class="sec-title">اهداف الوزارة ذات الاستراتيجية</h2></div>
+
+											<div class="flex mtmd justify-between">
+												<div>
+													<div><i class="fas fa-circle"></i>&nbsp; موارد بشرية</div>
+												  	<div class="mtsm">
+												  		<span class="text-primary">التكلفة التقريبية: </span> <span>1000 ريال</span>
+												  	</div>
+												</div>
+												<div>
+													<div><i class="fas fa-circle"></i>&nbsp; استشارات</div>
+												  	<div class="mtsm">
+												  		<span class="text-primary">التكلفة التقريبية: </span> <span>1000 ريال</span>
+												  	</div>
+												</div>
+												<div>
+													<div><i class="fas fa-circle"></i>&nbsp; شراء الدراسات / التقارير</div>
+												  	<div class="mtsm">
+												  		<span class="text-primary">التكلفة التقريبية: </span> <span>1000 ريال</span>
+												  	</div>
+												</div>
+												<div>
+													<div><i class="fas fa-circle"></i>&nbsp; برنامج تقنية المعلومات</div>
+												  	<div class="mtsm">
+												  		<span class="text-primary">التكلفة التقريبية: </span> <span>1000 ريال</span>
+												  	</div>
+												</div>
+												<div>
+													<div><i class="fas fa-circle"></i>&nbsp; استشارات</div>
+												  	<div class="mtsm">
+												  		<span class="text-primary">التكلفة التقريبية: </span> <span>1000 ريال</span>
+												  	</div>
+												</div>
+											</div>
+
+											<div class="mtxlg ptmd text-center">
+												<h5><span class="text-primary">إجمالي التكلفة:</span> <span class="text-gray">5000 ريال</span></h5>
+											</div>
+										</div>
+
+										<div class="mtlg ptlg bt">
+											<div><h2 class="sec-title">نوع الموارد البشرية</h2></div>
+											<div class="flex mtmd justify-between">
+												<div>
+													<div><i class="fas fa-circle"></i>&nbsp; الراعي / الادارة التنفيذية</div>
+												  	<div class="mtsm">
+												  		<span class="text-primary">المدة: </span> <span>10 ايام</span>
+												  	</div>
+												  	<div class="mtsm">
+												  		<span class="text-primary">الدوام: </span> <span>جزئي</span>
+												  	</div>
+												  	<div class="mtsm">
+												  		<span class="text-primary">نسبة الدوام الجزئي: </span> <span>40%</span>
+												  	</div>
+												</div>
+												<div>
+													<div><i class="fas fa-circle"></i>&nbsp; وكيل / مدير</div>
+												  	<div class="mtsm">
+												  		<span class="text-primary">المدة: </span> <span>10 ايام</span>
+												  	</div>
+												  	<div class="mtsm">
+												  		<span class="text-primary">الدوام: </span> <span>جزئي</span>
+												  	</div>
+												  	<div class="mtsm">
+												  		<span class="text-primary">نسبة الدوام الجزئي: </span> <span>40%</span>
+												  	</div>
+												</div>
+												<div>
+													<div><i class="fas fa-circle"></i>&nbsp; مدير مشروع</div>
+												  	<div class="mtsm">
+												  		<span class="text-primary">المدة: </span> <span>10 ايام</span>
+												  	</div>
+												  	<div class="mtsm">
+												  		<span class="text-primary">الدوام: </span> <span>جزئي</span>
+												  	</div>
+												  	<div class="mtsm">
+												  		<span class="text-primary">نسبة الدوام الجزئي: </span> <span>40%</span>
+												  	</div>
+												</div>
+												<div>
+													<div><i class="fas fa-circle"></i>&nbsp; حامل مشعل المشروع</div>
+												  	<div class="mtsm">
+												  		<span class="text-primary">المدة: </span> <span>10 ايام</span>
+												  	</div>
+												  	<div class="mtsm">
+												  		<span class="text-primary">الدوام: </span> <span>جزئي</span>
+												  	</div>
+												  	<div class="mtsm">
+												  		<span class="text-primary">نسبة الدوام الجزئي: </span> <span>40%</span>
+												  	</div>
+												</div>
+												<div>
+													<div><i class="fas fa-circle"></i>&nbsp; خبراء في نفس المجال</div>
+												  	<div class="mtsm">
+												  		<span class="text-primary">المدة: </span> <span>10 ايام</span>
+												  	</div>
+												  	<div class="mtsm">
+												  		<span class="text-primary">الدوام: </span> <span>جزئي</span>
+												  	</div>
+												  	<div class="mtsm">
+												  		<span class="text-primary">نسبة الدوام الجزئي: </span> <span>40%</span>
+												  	</div>
+												</div>
+												<div>
+													<div><i class="fas fa-circle"></i>&nbsp; اخري</div>
+												  	<div class="mtsm">
+												  		<span class="text-primary">المدة: </span> <span>10 ايام</span>
+												  	</div>
+												  	<div class="mtsm">
+												  		<span class="text-primary">الدوام: </span> <span>جزئي</span>
+												  	</div>
+												  	<div class="mtsm">
+												  		<span class="text-primary">نسبة الدوام الجزئي: </span> <span>40%</span>
+												  	</div>
+												</div>
+											</div>
+
+											<div class="rows-even-odd mtxlg">
+												<div class="row">
+													<label class="col-md-3 col-sm-12 text-primary">حكومة المبادرة</label>
+													<div class="col-md-8 col-sm-12"><span>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها</span></div>
+												</div>
+
+												<div class="row">
+													<label class="col-md-3 col-sm-12 text-primary">موجز الاستشارات الاضافية / نطاق المشتريات الاخري</label>
+													<div class="col-md-8 col-sm-12"><span>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها</span></div>
+												</div>
+
+												<div class="row">
+													<label class="col-md-3 col-sm-12 text-primary">اصحاب المصلحة</label>
+													<div class="col-md-8 col-sm-12"><span>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها</span></div>
+												</div>
+
+												<div class="row">
+													<label class="col-md-3 col-sm-12 text-primary">نوع المشاركة</label>
+													<div class="col-md-8 col-sm-12"><span>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها</span></div>
+												</div>
+											</div>
+										</div> -->
+									</div>
+
+									<div class="mtxlg text-left">
+										<button type="button" class="btn btn-primary btn-wide">موافقة</button>
+										<button type="button" class="btn btn-danger btn-wide">إعادة إلي مالك العمل</button>
+									</div>
+
 								</div>
 							</div>
-
-							<div class="row mtmd">
-						  		<label class="col-sm-2 col-form-label">&nbsp;</label>
-						  		<div class="col-md-7 col-sm-10">
-							  		<button type="submit" class="btn btn-wide btn-primary">ارسل لمدير التنفيذ</button>
-							  		<button type="reset" class="btn btn-wide btn-gray">إلغاء</button>
-						  		</div>
-						  	</div>
-						</form>
+						</div>
 					</div>
 				</section>
 				
-		    	<section id="activites" class="section mbmd mtmd pos-rel b_all ptlg pblg prlg pllg common-shadow" style="display: none;">
+		    	<section id="activites" class="section mbmd mtmd pos-rel b_all ptlg pblg prlg pllg common-shadow" >
 
 		    		<div style="display: flex; justify-content: space-between;">
 						<h2 class="title">فاعليات</h2>
@@ -2298,410 +3262,6 @@
 												</div>
 											</div>
 										</form>
-									</div>
-
-								</div>
-							</div>
-						</div>
-
-						<div class="card">
-							<div class="card-header" id="headTwelve">
-								<h2>
-									<button type="button" class="collapsed" data-toggle="collapse" data-target="#colTwelve" aria-expanded="true" aria-controls="colTwelve"></button>
-									<span style="color:#004C45;">إجراء يتطلب تفاعلك (مراجعة واعتماد دراسة جدوي)</span>
-								</h2>
-							</div>
-
-							<div id="colTwelve" class="collapse" aria-labelledby="headTwelve">
-								<div class="card-body">
-
-									<div>
-										<div class="title-wrapper prsm plsm">
-											<h2 class="sec-title"><small><i class="fas fa-circle"></i></small>&nbsp; بيانات دراسة جدوي</h2>
-										</div>
-
-										<div class="rows-even-odd mtmd">
-											<div class="row">
-												<div class="col-sm-12"><span class="text-primary">عنوان دراسة جدوي :</span></div>
-												<div class="col-sm-12 mtsm"><h6>تعديل الفقرة (ب) من المادة الثانية من لائحة الترقيات... ـ</h6></div>
-											</div>
-
-											<div class="row">
-												<div class="col-sm-6">
-													<div class="row">
-														<div class="col-sm-5"><span class="text-primary">:النسخة</span></div>
-														<div class="col-sm-7"><span>T1000205</span></div>
-													</div>
-												</div>
-												<div class="col-sm-6">
-													<div class="row">
-														<div class="col-sm-5"><span class="text-primary">التاريخ :</span></div>
-														<div class="col-sm-7"><span>1441/10/1</span></div>
-													</div>
-												</div>
-											</div>
-
-											<div class="row">
-												<div class="col-sm-6">
-													<div class="row">
-														<div class="col-sm-5"><span class="text-primary">حامل المشعل :</span></div>
-														<div class="col-sm-7"><span>الديوان الملكى</span></div>
-													</div>
-												</div>
-												<div class="col-sm-6">
-													<div class="row">
-														<div class="col-sm-5"><span class="text-primary">البريد الالكتروني</span></div>
-														<div class="col-sm-7"><a href="mailto:mr.ahmedsaeed1@gmail.com">mr.ahmedsaeed1@gmail.com</a></div>
-													</div>
-												</div>
-											</div>
-
-											<div class="row">
-												<div class="col-sm-6">
-													<div class="row">
-														<div class="col-sm-5"><span class="text-primary">الوكالة :ـ</span></div>
-														<div class="col-sm-7"><span>احمد سعيد</span></div>
-													</div>
-												</div>
-												<div class="col-sm-6">
-													<div class="row">
-														<div class="col-sm-5"><span class="text-primary">الهاتف :</span></div>
-														<div class="col-sm-7"><span>01067258000</span></div>
-													</div>
-												</div>
-											</div>
-
-											<div class="row">
-												<div class="col-sm-6">
-													<div class="row">
-														<div class="col-sm-5"><span class="text-primary">حالة التكرار :</span></div>
-														<div class="col-sm-7"><span>جديد</span></div>
-													</div>
-												</div>
-												<div class="col-sm-6">
-													<div class="row">
-														<div class="col-sm-5"><span class="text-primary">التكلفة المتوقعة :</span></div>
-														<div class="col-sm-7"><span>١٠٠٠ ريال</span></div>
-													</div>
-												</div>
-											</div>
-
-											<div class="row">
-												<div class="col-sm-6">
-													<div class="row">
-														<div class="col-sm-5"><span class="text-primary">الاهمية :</span></div>
-														<div class="col-sm-7"><span>تكليف</span></div>
-													</div>
-												</div>
-												<div class="col-sm-6">
-													<div class="row">
-														<div class="col-sm-5"><span class="text-primary">تاريخ البدء المتوقع :</span></div>
-														<div class="col-sm-7"><span>13/02/2020</span></div>
-													</div>
-												</div>
-											</div>
-
-											<div class="row">
-												<div class="col-sm-6">
-													<div class="row">
-														<div class="col-sm-5"><span class="text-primary">تاريخ الانتهاء المتوقع :</span></div>
-														<div class="col-sm-7"><span>13/02/2020</span></div>
-													</div>
-												</div>
-											</div>
-
-											<div class="row">
-												<div class="col-sm-6">
-													<div class="row">
-														<div class="col-sm-5"><span class="text-primary">يوجد اعتمادات؟ :</span></div>
-														<div class="col-sm-7"><span>نعم</span></div>
-													</div>
-												</div>
-												<div class="col-sm-6">
-													<div class="row">
-														<div class="col-sm-5"><span class="text-primary">اسم المشروع :</span></div>
-														<div class="col-sm-7"><span>اسم المشروع</span></div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-													
-									<div class="mtmd ptmd bt">
-										<div class="title-wrapper prsm plsm">
-											<h2 class="sec-title"><small><i class="fas fa-circle"></i></small>&nbsp; بيانات عامة</h2>
-										</div>
-										
-										<div class="rows-even-odd mtmd">
-											<div class="row">
-												<div class="col-md-4 col-sm-12">
-													<div class="row">
-														<label class="col-md-4 col-sm-12 text-primary">رقم التكليف:</label>
-														<div class="col-md-8 col-sm-12">
-															<span>T8476465</span>
-														</div>
-													</div>
-												</div>
-												<div class="col-md-4 col-sm-12">
-													<div class="row">
-														<label class="col-md-4 col-sm-12 text-primary">التاريخ:</label>
-														<div class="col-md-8 col-sm-12">
-															<span>23/02/2020</span>
-														</div>
-													</div>
-												</div>
-												<div class="col-md-4 col-sm-12">
-													<div class="row">
-														<label class="col-md-4 col-sm-12 text-primary">البرنامج المرتبط وضعه:</label>
-														<div class="col-md-8 col-sm-12">
-															<span>جاري التحطيط</span>
-														</div>
-													</div>
-												</div>
-											</div>
-
-											<div class="row">
-												<label class="col-md-3 col-sm-12 text-primary">اسم التكليف</label>
-												<div class="col-md-8 col-sm-12"><span>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها</span></div>
-											</div>
-
-											<div class="row">
-												<label class="col-md-3 col-sm-12 text-primary">منافع قابلة للقياس ولها مستهدف محدد</label>
-												<div class="col-md-8 col-sm-12"><span>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها</span></div>
-											</div>
-
-											<div class="row">
-												<label class="col-md-3 col-sm-12 text-primary">وصف المشروع مع القياس الاستراتيجي والمعالم الرئيسية</label>
-												<div class="col-md-8 col-sm-12"><span>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها</span></div>
-											</div>
-
-											<div class="row">
-												<label class="col-md-3 col-sm-12 text-primary">البدائل / الخيارات</label>
-												<div class="col-md-8 col-sm-12"><span>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها</span></div>
-											</div>
-
-											<div class="row mtlg">
-												<div class="col-md-6 col-sm-12">
-													<div><h2 class="sec-title">اهداف الوزارة الاستراتيجية ذات الصلة</h2></div>
-													<ul class="text-large mtmd">
-														<li>تطوير التوجه الاستراتيجي لاولويات التنمية الوطنية</li>
-														<li>تطوير ومواءمة السياسات الاقتصادية</li>
-														<li>تمكين عملية اتخاذ القرار من خلال التحليل المبني علي البراهين</li>
-													</ul>
-												</div>
-												<div class="col-md-6 col-sm-12">
-													<div><h2 class="sec-title">المنافع / الاثر</h2></div>
-													<div class="row mtmd">
-														<div class="col-md-6 col-sm-12">
-															<h5>المنافع المباشرة</h5>
-															<ul class="text-large mtsm">
-																<li>إيرادات</li>
-																<li>رفع كفاءة الانفاق</li>
-															</ul>
-														</div>
-														<div class="col-md-6 col-sm-12">
-															<h5>المنافع غير المباشرة</h5>
-															<ul class="text-large mtsm">
-																<li>منفعة اجتماعية</li>
-																<li>تمكين اتخاذ القرار</li>
-															</ul>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-
-									<div class="mtmd ptmd bt">
-										<div class="title-wrapper prsm plsm">
-											<h2 class="sec-title"><small><i class="fas fa-circle"></i></small>&nbsp; الاساس المنطقي / التبرير</h2>
-										</div>
-										
-										<div class="rows-even-odd mtmd">
-											<div class="row">
-												<label class="col-md-3 col-sm-12 text-primary">منافع قابلة للقياس ولها مستهدف محدد</label>
-												<div class="col-md-8 col-sm-12"><span>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها</span></div>
-											</div>
-
-											<div class="row">
-												<label class="col-md-3 col-sm-12 text-primary">وصف المشروع مع القياس الاستراتيجي والمعالم الرئيسية</label>
-												<div class="col-md-8 col-sm-12"><span>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها</span></div>
-											</div>
-
-											<div class="row">
-												<label class="col-md-3 col-sm-12 text-primary">البدائل / الخيارات</label>
-												<div class="col-md-8 col-sm-12"><span>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها</span></div>
-											</div>
-										</div>
-									</div>
-
-									<div class="mtmd ptmd bt">
-										<div class="title-wrapper prsm plsm">
-											<h2 class="sec-title"><small><i class="fas fa-circle"></i></small>&nbsp; المتطلبات</h2>
-										</div>
-										
-										<div class="mtlg">
-											<div><h2 class="sec-title">اهداف الوزارة ذات الاستراتيجية</h2></div>
-
-											<div class="flex mtmd justify-between">
-												<div>
-													<div><i class="fas fa-circle"></i>&nbsp; موارد بشرية</div>
-												  	<div class="mtsm">
-												  		<span class="text-primary">التكلفة التقريبية: </span> <span>1000 ريال</span>
-												  	</div>
-												</div>
-												<div>
-													<div><i class="fas fa-circle"></i>&nbsp; استشارات</div>
-												  	<div class="mtsm">
-												  		<span class="text-primary">التكلفة التقريبية: </span> <span>1000 ريال</span>
-												  	</div>
-												</div>
-												<div>
-													<div><i class="fas fa-circle"></i>&nbsp; شراء الدراسات / التقارير</div>
-												  	<div class="mtsm">
-												  		<span class="text-primary">التكلفة التقريبية: </span> <span>1000 ريال</span>
-												  	</div>
-												</div>
-												<div>
-													<div><i class="fas fa-circle"></i>&nbsp; برنامج تقنية المعلومات</div>
-												  	<div class="mtsm">
-												  		<span class="text-primary">التكلفة التقريبية: </span> <span>1000 ريال</span>
-												  	</div>
-												</div>
-												<div>
-													<div><i class="fas fa-circle"></i>&nbsp; استشارات</div>
-												  	<div class="mtsm">
-												  		<span class="text-primary">التكلفة التقريبية: </span> <span>1000 ريال</span>
-												  	</div>
-												</div>
-											</div>
-
-											<div class="mtxlg ptmd text-center">
-												<h5><span class="text-primary">إجمالي التكلفة:</span> <span class="text-gray">5000 ريال</span></h5>
-											</div>
-										</div>
-
-										<div class="mtlg ptlg bt">
-											<div><h2 class="sec-title">نوع الموارد البشرية</h2></div>
-											<div class="flex mtmd justify-between">
-												<div>
-													<div><i class="fas fa-circle"></i>&nbsp; الراعي / الادارة التنفيذية</div>
-												  	<div class="mtsm">
-												  		<span class="text-primary">المدة: </span> <span>10 ايام</span>
-												  	</div>
-												  	<div class="mtsm">
-												  		<span class="text-primary">الدوام: </span> <span>جزئي</span>
-												  	</div>
-												  	<div class="mtsm">
-												  		<span class="text-primary">نسبة الدوام الجزئي: </span> <span>40%</span>
-												  	</div>
-												</div>
-												<div>
-													<div><i class="fas fa-circle"></i>&nbsp; وكيل / مدير</div>
-												  	<div class="mtsm">
-												  		<span class="text-primary">المدة: </span> <span>10 ايام</span>
-												  	</div>
-												  	<div class="mtsm">
-												  		<span class="text-primary">الدوام: </span> <span>جزئي</span>
-												  	</div>
-												  	<div class="mtsm">
-												  		<span class="text-primary">نسبة الدوام الجزئي: </span> <span>40%</span>
-												  	</div>
-												</div>
-												<div>
-													<div><i class="fas fa-circle"></i>&nbsp; مدير مشروع</div>
-												  	<div class="mtsm">
-												  		<span class="text-primary">المدة: </span> <span>10 ايام</span>
-												  	</div>
-												  	<div class="mtsm">
-												  		<span class="text-primary">الدوام: </span> <span>جزئي</span>
-												  	</div>
-												  	<div class="mtsm">
-												  		<span class="text-primary">نسبة الدوام الجزئي: </span> <span>40%</span>
-												  	</div>
-												</div>
-												<div>
-													<div><i class="fas fa-circle"></i>&nbsp; حامل مشعل المشروع</div>
-												  	<div class="mtsm">
-												  		<span class="text-primary">المدة: </span> <span>10 ايام</span>
-												  	</div>
-												  	<div class="mtsm">
-												  		<span class="text-primary">الدوام: </span> <span>جزئي</span>
-												  	</div>
-												  	<div class="mtsm">
-												  		<span class="text-primary">نسبة الدوام الجزئي: </span> <span>40%</span>
-												  	</div>
-												</div>
-												<div>
-													<div><i class="fas fa-circle"></i>&nbsp; خبراء في نفس المجال</div>
-												  	<div class="mtsm">
-												  		<span class="text-primary">المدة: </span> <span>10 ايام</span>
-												  	</div>
-												  	<div class="mtsm">
-												  		<span class="text-primary">الدوام: </span> <span>جزئي</span>
-												  	</div>
-												  	<div class="mtsm">
-												  		<span class="text-primary">نسبة الدوام الجزئي: </span> <span>40%</span>
-												  	</div>
-												</div>
-												<div>
-													<div><i class="fas fa-circle"></i>&nbsp; اخري</div>
-												  	<div class="mtsm">
-												  		<span class="text-primary">المدة: </span> <span>10 ايام</span>
-												  	</div>
-												  	<div class="mtsm">
-												  		<span class="text-primary">الدوام: </span> <span>جزئي</span>
-												  	</div>
-												  	<div class="mtsm">
-												  		<span class="text-primary">نسبة الدوام الجزئي: </span> <span>40%</span>
-												  	</div>
-												</div>
-											</div>
-
-											<div class="rows-even-odd mtxlg">
-												<div class="row">
-													<label class="col-md-3 col-sm-12 text-primary">حكومة المبادرة</label>
-													<div class="col-md-8 col-sm-12"><span>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها</span></div>
-												</div>
-
-												<div class="row">
-													<label class="col-md-3 col-sm-12 text-primary">موجز الاستشارات الاضافية / نطاق المشتريات الاخري</label>
-													<div class="col-md-8 col-sm-12"><span>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها</span></div>
-												</div>
-
-												<div class="row">
-													<label class="col-md-3 col-sm-12 text-primary">اصحاب المصلحة</label>
-													<div class="col-md-8 col-sm-12"><span>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها</span></div>
-												</div>
-
-												<div class="row">
-													<label class="col-md-3 col-sm-12 text-primary">نوع المشاركة</label>
-													<div class="col-md-8 col-sm-12"><span>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها</span></div>
-												</div>
-											</div>
-										</div>
-									</div>
-
-									<div class="mtxlg text-left">
-										<button type="button" class="btn btn-primary btn-wide">ارسل الي مدير ادارة الاستراتيجية</button>
-										<button type="button" class="btn btn-primary-reverse btn-wide">ارسل إلي حامل المشعل للتعديل</button>
-									</div>
-
-									<div class="mtlg ptlg pblg prlg pllg common-shadow bt">
-										<div class="row mtlg">
-											<label for="" class="col-md-2 col-sm-12 text-primary">الملاحظات: <span class="required">*</span></label>
-											<div class="col-md-8 col-sm-12">
-												<textarea name="" class="form-control" rows="4" placeholder="دون الملاحظات هنا"></textarea>
-											</div>
-										</div>
-
-										<div class="row mtlg">
-											<label for="" class="col-md-2 col-sm-12 text-primary">&nbsp;</label>
-											<div class="col-md-8 col-sm-12">
-												<button type="submit" class="btn btn-primary btn-wide">إعادة الارسال لمالم العمل</button>
-												<button type="button" class="btn btn-gray btn-wide">إلغاء</button>
-											</div>
-										</div>
 									</div>
 
 								</div>
@@ -8528,7 +9088,7 @@
 		    	</div>
 
 
-		    	<section class="section mbmd mtmd pos-rel b_all ptlg pblg prlg pllg common-shadow"  style="display: none;">
+		    	<section class="section mbmd mtmd pos-rel b_all ptlg pblg prlg pllg common-shadow">
 					<div>
 						<div>
 							<h2 class="sec-title">نتيجة تحليل التكليف من قبل حامل المشعل</h2>

@@ -13072,16 +13072,31 @@ $(function () {
 	$('#quick_taklet_actions_ul').on('click', function(evt){
 		evt &&  evt.preventDefault();
 		var $item = $(evt.originalEvent.target)
+		var $li = $item.parent('li')
 		var target = $item.attr('href')
-		$(target).show(100)
-		window.scrollTo({ top: $(target).offset().top - 10, behavior: 'smooth'});
+		var hasSubMenu = $li.hasClass('has-submenu')
+		if (hasSubMenu) {
+			$li.toggleClass('active')
+			return
+		}
+		//$(target).show(100)
+		//target && window.scrollTo({ top: $(target).offset().top - 10, behavior: 'smooth'});
 	});
 
-	$('.close_section').on('click', function(evt){
+	// $('.close_section').on('click', function(evt){
+	// 	evt && evt.preventDefault();
+	// 	var target = $(this).data('target');
+	// 	//$('#' + target).css('display', 'none');
+	// 	$('#' + target).hide(100);
+	// });
+
+	$doc.on('click', '.close_section', function(evt){
 		evt && evt.preventDefault();
-		var target = $(this).data('target');
+		//var target = $(this).data('target');
+		var $target = $(this).parents('#partialContainer');
 		//$('#' + target).css('display', 'none');
-		$('#' + target).hide(100);
+		$target.empty()
+		//$('#' + target).hide(100);
 	});
 
 
@@ -13192,6 +13207,9 @@ $(function () {
 	});
 	// end it
 
+	function spinner () {
+		return '<div class="spinner dark"><div class="double-bounce1"></div><div class="double-bounce2"></div></div>'
+	}
 
 
 	function modalTemp(modalId, modalSize, modalTitle) {
@@ -13263,6 +13281,34 @@ $(function () {
 
 	//    $this.off('click');
 	// });
+
+
+	//ajax partial
+	$doc.on( 'click', '[data-toggle="ajaxpartial"]', function(e){
+	   e && e.preventDefault();
+
+	   var $this = $(this), 
+	   	$remote =  $this.attr('href') || $this.data('partial'),
+	   	$partialContainer = $('#partialContainer'),
+	   	spinner = $('<div class="ptlg pblg mtlg mbmd b_all"><div class="spinner dark"><div class="double-bounce1"></div><div class="double-bounce2"></div></div></div>')
+
+   	$partialContainer.empty().append(spinner);
+
+	   $.ajax({
+	   	url: '../' + $remote,
+	   	dataType: "html"
+	   }).done(function(data){
+			$partialContainer.html(data)
+   		//var filesToUpload = [];
+			//var files1Uploader = $("#fileinputWrap").fileUploader(filesToUpload, "fileinputWrap");
+   		$('.js-select2').each(function(index, item){
+				var $item = $(item), option = $item.data('select');
+				$item.select2(option)
+			});
+		}).fail(function() { 
+			/* Do error.. */
+		});
+	});
 
 
 	$doc.on("click", ".modal-body .nav .nav-link", function () {
