@@ -18893,6 +18893,13 @@ div.dtr-bs-modal table.table tr:first-child td {
   background-color: #FFFFFF;
 }
 
+.close_section {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  z-index: 1;
+}
+
 .hpstatics {
   width: 20%;
   background-color: #FDFDFD;
