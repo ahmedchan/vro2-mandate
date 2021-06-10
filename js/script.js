@@ -13607,15 +13607,15 @@ $(function () {
 				column: {
 					zones: [{
 						value: 4, // Values up to 4 (not including) ...
-						color: '#A4A4A4' // ... have the color blue.
+						color: '#FFBD5B' // ... have the color blue.
 					}, {
 						value: 9,
-						color: '#1F78B4' // Values from 10 (including) and up have the color red
+						color: '#AECBF3' // Values from 10 (including) and up have the color red
 					}, {
 						value: 10,
-						color: '#1CA0B0' // Values from 10 (including) and up have the color red
+						color: '#0C66E1' // Values from 10 (including) and up have the color red
 					}, {
-						color: '#0F7267' // Values from 10 (including) and up have the color red
+						color: '#0C66E1' // Values from 10 (including) and up have the color red
 					}]
 				},
 				series: {
